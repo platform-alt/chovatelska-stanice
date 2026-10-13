@@ -137,7 +137,7 @@
             <h2>Nezávazná poptávka a rezervace štěňátka</h2>
             <p>Máte-li zájem o štěňátko z naší chovatelské stanice, vyplňte prosím níže uvedený formulář nebo nás kontaktujte přímo. Chceme pro naše štěňata ty nejlepší možné domovy, proto se v dotazníku ptáme na vaše zkušenosti s plemenem a podmínky, které pejskovi nabídnete.</p>
 
-            <form action="#" method="POST">
+            <form onsubmit="event.preventDefault(); alert('Děkujeme za vaši poptávku! Formulář byl úspěšně odeslán.'); this.reset();">
                 <p>
                     <label for="jmeno">Vaše jméno a příjmení:</label><br>
                     <input type="text" id="jmeno" name="jmeno" required>
