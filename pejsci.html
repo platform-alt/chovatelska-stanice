@@ -1,132 +1,110 @@
-</title>
-
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Naši psí parťáci a rezervace štěňátek – Chovatelská stanice Z Černého skvostu</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
     <header>
-
         <h1>Naši psí parťáci a rezervace štěňátek</h1>
-
         <p>Hledáte věrného, inteligentního a udatného společníka? Prohlédněte si aktuální nabídku vrhů nebo si zarezervujte svého budoucího dobrmana z naší chovatelské stanice.</p>
-
         <nav>
-
             <a href="index.html">Domů</a> | 
+            <a href="pejsci.html">Naši psi a štěňata</a> |
+            <a href="podminky.html">Podmínky prodeje</a> | 
+            <a href="dotazy.html">Časté dotazy</a>
+        </nav>
+    </header>
 
-            <a href="podminky.html">Podmínky prodeje</a> |
-            <a href="dotazy.html">Časté dotazy</a> 
+    <main>
+        <section>
+            <h2>Štěně ihned k odběru</h2>
+            <p>Představujeme naše nejstarší štěňátko, které je plně připravené k odchodu do nového domova.</p>
+            
+            <div class="puppy-gallery">
+                <div class="puppy-item">
+                    <img src="stene.png" alt="Štěně dobrmana Ares připravené k odběru">
+                    <h3>Ares Z Černého skvostu</h3>
+                    <p><strong>Pohlaví:</strong> Pes (Pejsek)</p>
+                    <p><strong>Stav:</strong> Ihned k odběru / Volný</p>
+                    <p>Ares je velmi kontaktní, hravý a zvídavý pejsek s krásnou stavbou těla a vyrovnanou povahou. Je plně očkovaný, čipovaný a připravený dělat radost nové rodině.</p>
+                </div>
+            </div>
+        </section>
 
-    </nav>
+        <section>
+            <h2>Aktuální vrh / Připravovaná spojení</h2>
+            <p>Zde najdete informace o našich aktuálně narozených štěňátkách a plánovaných vrzích. Všechna naše štěňata odcházejí do nového domova s průkazem původu (FCI), řádně očkovaná, odčervená, čipovaná a s petpasem.</p>
 
-</header>
+            <article>
+                <h3>Vrh "Dobrman3" – Narozeno 3.10</h3>
+                <p><strong>Matka:</strong> Astra – Výborná zdravotní vyšetření, úspěšná na výstavách, vyrovnaná povaha.</p>
+                <p><strong>Otec:</strong> Bruno – Šampion krásy, silná kostra, skvělý rodinný pes i pracant.</p>
+                <p>K dispozici jsou volná štěňátka (pejsci i fenečky) v černé barvě s pálením.</p>
 
+                <div class="image-gallery">
+                    <img src="rodice.webp" alt="Rodiče vrhu - Astra a Bruno">
+                    <img src="stenata.png" alt="Štěňátka z vrhu Dobrman3">
+                </div>
+            </article>
+        </section>
 
+        <section>
+            <h2>Náš chovný program – Naši dospělí psi</h2>
+            <p>Dobrmani v naší stanici jsou plnohodnotnými členy naší rodiny. Klademe velký důraz na jejich zdraví, povahu a pracovní předpoklady.</p>
 
-<main>
+            <div class="grid-2">
+                <div class="dog-card">
+                    <img src="astra.jpg" alt="Chovná fena Astra">
+                    <h3>Astra</h3>
+                    <p>Výborná zdravotní vyšetření, úspěšná na výstavách, vyrovnaná povaha. Skvělá matka a parťák na procházky.</p>
+                </div>
+                <div class="dog-card">
+                    <img src="bruno.webp" alt="Chovný pes Bruno">
+                    <h3>Bruno</h3>
+                    <p>Šampion krásy, silná kostra, skvělý rodinný pes i pracant. Zdravotní testy (HD, ED, DCM negativní).</p>
+                </div>
+            </div>
+        </section>
 
-    <section>
+        <section>
+            <h2>Nezávazná poptávka a rezervace štěňátka</h2>
+            <p>Máte-li zájem o štěňátko z naší chovatelské stanice, vyplňte prosím níže uvedený formulář nebo nás kontaktujte přímo. Chceme pro naše štěňata ty nejlepší možné domovy, proto se v dotazníku ptáme na vaše zkušenosti s plemenem a podmínky, které pejskovi nabídnete.</p>
 
-        <h2>Aktuální vrh / Připravovaná spojení</h2>
+            <form action="#" method="POST">
+                <p>
+                    <label for="jmeno">Vaše jméno a příjmení:</label><br>
+                    <input type="text" id="jmeno" name="jmeno" required>
+                </p>
 
-        <p>Zde najdete informace o našich aktuálně narozených štěňátkách a plánovaných vrzích. Všechna naše štěňata odcházejí do nového domova s průkazem původu (FCI), řádně očkovaná, odčervená, čipovaná a s petpasem.</p>
+                <p>
+                    <label for="email">E-mailová adresa:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
 
-        
+                <p>
+                    <label for="telefon">Telefonní číslo:</label><br>
+                    <input type="tel" id="telefon" name="telefon">
+                </p>
 
-        <article>
+                <p>
+                    <label for="zkusenosti">Máte již zkušenosti s plemenem dobrman?</label><br>
+                    <textarea id="zkusenosti" name="zkusenosti" rows="4" placeholder="Napište nám něco o sobě, vašich zkušenostech a jaké máte s pejskem plány (výstavy, sport, gaučák...)."></textarea>
+                </p>
 
-            <h3>Vrh "Dobrman3" – Narozeno 3.10</h3>
+                <p>
+                    <button type="submit">Odeslat nezávaznou poptávku</button>
+                </p>
+            </form>
+        </section>
+    </main>
 
-            <p><strong>Matka:</strong> Astra – Výborná zdravotní vyšetření, úspěšná na výstavách, vyrovnaná povaha.</p>
+    <footer>
+        <a href="mailto:zcernehoskvostu@gmail.com" class="btn">Kontaktujte nás e-mailem</a>
+        <p>&copy; 2026 Chovatelská stanice Z Černého skvostu</p>
+    </footer>
 
-            <p><strong>Otec:</strong> Bruno – Šampion krásy, silná kostra, skvělý rodinný pes i pracant.</p>
-
-            <p>K dispozici jsou volná štěňátka (pejsci i fenečky) v černé barvě s pálením.</p>
-
-        </article>
-
-    </section>
-
-
-
-    <section>
-
-        <h2>Náš chovný program – Naši dospělí psi</h2>
-
-        <p>Dobrmani v naší stanici jsou plnohodnotnými členy naší rodiny. Klademe velký důraz na jejich zdraví, povahu a pracovní předpoklady.</p>
-
-        <ul>
-
-            <li><strong>Axel:</strong> Zdravotní testy (HD, ED, DCM negativní), výborné výstavní ohodnocení, milovník lidí a sportu.</li>
-
-            <li><strong>Heidi:</strong> Skvělá hlídačka s něžnou povahou k dětem, úspěšná v záchranářském výcviku.</li>
-
-        </ul>
-
-    </section>
-
-
-
-    <section>
-
-        <h2>Nezávazná poptávka a rezervace štěňátka</h2>
-
-        <p>Máte-li zájem o štěňátko z naší chovatelské stanice, vyplňte prosím níže uvedený formulář nebo nás kontaktujte přímo. Chceme pro naše štěňata ty nejlepší možné domovy, proto se v dotazníku ptáme na vaše zkušenosti s plemenem a podmínky, které pejskovi nabídnete.</p>
-
-        
-
-        <form action="#" method="POST">
-
-            <p>
-
-                <label for="jmeno">Vaše jméno a příjmení:</label><br>
-
-                <input type="text" id="jmeno" name="jmeno" required>
-
-            </p>
-
-            <p>
-
-                <label for="email">E-mailová adresa:</label><br>
-
-                <input type="email" id="email" name="email" required>
-
-            </p>
-
-            <p>
-
-                <label for="telefon">Telefonní číslo:</label><br>
-
-                <input type="tel" id="telefon" name="telefon">
-
-            </p>
-
-            <p>
-
-                <label for="zkuusenosti">Máte již zkušenosti s plemenem dobrman?</label><br>
-
-                <textarea id="zkuusenosti" name="zkuusenosti" rows="4" placeholder="Napište nám něco o sobě, vašich zkušenostech a jaké máte s pejskem plány (výstavy, sport, gaučák...)."></textarea>
-
-            </p>
-
-            <p>
-
-                <button type="submit">Odeslat nezávaznou poptávku</button>
-
-            </p>
-
-        </form>
-
-    </section>
-
-</main>
-
-
-
-<footer>
-
-    <p>&copy; 2026 Chovatelská stanice Z Černého skvostu</p>
-
-</footer>
+</body>
+</html>
