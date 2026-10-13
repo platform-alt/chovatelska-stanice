@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <title>Časté dotazy – Chovatelská stanice Z Černého skvostu</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background-color: #252525;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background-color: #2a2a2a;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -11,7 +35,9 @@
         <h1>Časté dotazy</h1>
         <p>Odpovědi na to, na co se nás ptáte nejčastěji. Nenašli jste svou otázku? Napište nám.</p>
         <nav>
-            <a href="index.html">Úvod</a>
+            <a href="index.html">Domů</a> | 
+            <a href="pejsci.html">Pejsci a rezervace</a> | 
+            <a href="podminky.html">Podmínky prodeje</a> | 
             <a href="dotazy.html">Časté dotazy</a>
         </nav>
     </header>
@@ -19,7 +45,7 @@
     <main>
         <section>
             <h2>Jak probíhá rezervace štěněte?</h2>
-            <p>Rezervace štěněte probíhá po předchozí osobní nebo telefonické domluvě a složení rezervačního poplatku. Vždy preferujeme, aby se budoucí majitelé přijeli na štěňátka i naši stanici podívat osobě.</p>
+            <p>Rezervace štěněte probíhá po předchozí osobní nebo telefonické domluvě a složení rezervačního poplatku. Vždy preferujeme, aby se budoucí majitelé přijeli na štěňátka i naši stanici podívat osobně.</p>
 
             <h3>Postup rezervace v krocích:</h3>
             <ol>
@@ -66,13 +92,6 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-
-        <section>
-            <h2>Náš chov</h2>
-            <div class="puppy-item">
-                <img src="vybeh.jpg" alt="Dobrman v naší chovatelské stanici Z Černého skvostu">
-            </div>
         </section>
     </main>
 

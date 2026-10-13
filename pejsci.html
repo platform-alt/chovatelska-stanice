@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Naši psí parťáci a rezervace štěňátek – Chovatelská stanice Z Černého skvostu</title>
+    <title>Naši psi a štěňata – Chovatelská stanice Z Černého skvostu</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .dog-card img, .puppy-item img, .image-gallery img {
@@ -13,6 +13,28 @@
             border-radius: 4px;
             border: 1px solid var(--border-color);
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background-color: #252525;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background-color: #2a2a2a;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
     </style>
 </head>
 <body>
@@ -22,7 +44,7 @@
         <p>Hledáte věrného, inteligentního a udatného společníka? Prohlédněte si aktuální nabídku vrhů nebo si zarezervujte svého budoucího dobrmana z naší chovatelské stanice.</p>
         <nav>
             <a href="index.html">Domů</a> | 
-            <a href="pejsci.html">Naši psi a štěňata</a> |
+            <a href="pejsci.html">Pejsci a rezervace</a> |
             <a href="podminky.html">Podmínky prodeje</a> | 
             <a href="dotazy.html">Časté dotazy</a>
         </nav>
@@ -31,17 +53,49 @@
     <main>
         <section>
             <h2>Štěně ihned k odběru</h2>
-            <p>Představujeme naše nejstarší štěňátko, které je plně připravené k odchodu do nového domova.</p>
+            <p>Představujeme našeho nejstaršího pejska, který je plně připravený k odchodu do nového domova.</p>
             
             <div class="puppy-gallery">
                 <div class="puppy-item">
                     <img src="stene.png" alt="Štěně dobrmana Ares připravené k odběru">
                     <h3>Ares Z Černého skvostu</h3>
+                    <p><strong>Věk:</strong> 4 měsíce</p>
                     <p><strong>Pohlaví:</strong> Pes (Pejsek)</p>
                     <p><strong>Stav:</strong> Ihned k odběru / Volný</p>
                     <p>Ares je velmi kontaktní, hravý a zvídavý pejsek s krásnou stavbou těla a vyrovnanou povahou. Je plně očkovaný, čipovaný a připravený dělat radost nové rodině.</p>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <h2>Ceník a finanční podmínky</h2>
+            <p>Přehled cen štěňátek a souvisejících poplatků v naší chovatelské stanici.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th>Popis</th>
+                        <th>Cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Štěně s PP (FCI)</td>
+                        <td>Standardní odběr se všemi doklady, očkováním a startovacím balíčkem</td>
+                        <td>Dohodou / dle kvality vrhu</td>
+                    </tr>
+                    <tr>
+                        <td>Rezervační záloha</td>
+                        <td>Nevratná záloha skládaná při podpisu rezervační smlouvy</td>
+                        <td>10 000 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>Chovatelský servis</td>
+                        <td>Doživotní poradenství, pomoc s výcvikem a přípravou na výstavy</td>
+                        <td>Zdarma pro naše odchovy</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section>
@@ -56,7 +110,7 @@
 
                 <div class="image-gallery">
                     <img src="rodice.png" alt="Rodiče vrhu - Astra a Bruno">
-                    <img src="stenata.jpg" alt="Štěňátka z vrhu Dobrman3">
+                    <img src="stenata.png" alt="Štěňátka z vrhu Dobrman3">
                 </div>
             </article>
         </section>
